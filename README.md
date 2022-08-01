@@ -6,4 +6,4 @@
 
 ## video tutorial of how the application works: https://www.awesomescreenshot.com/video/10263630?key=4aa2811953e3f9f946348ffd7c10e003
 
-## heroku link:
+## heroku link: https://dashboard.heroku.com/apps/nameless-forest-84992
