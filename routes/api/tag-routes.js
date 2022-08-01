@@ -7,10 +7,9 @@ router.get('/', (req, res) => {
   // find all tags
   // be sure to include its associated Product data
   Tag.findAll({
-    include: {
-      model: Tag,
-      through: Product
-    }
+    include: [
+      Product
+    ]
   })
   .then(response => res.json(response))
   .catch(err => console.log(err));

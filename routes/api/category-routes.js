@@ -7,10 +7,12 @@ router.get('/', (req, res) => {
   // find all categories
   // be sure to include its associated Products
   Category.findAll({
-    include: {
-      
-    }
-  });
+    include: [
+      Product
+    ]
+  })
+  .then(response => res.json(response))
+  .catch(err => console.log(err));
 });
 
 router.get('/:id', (req, res) => {
