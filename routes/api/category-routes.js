@@ -38,7 +38,7 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
-  Category.updated(req.body, {
+  Category.update(req.body, {
     where: {
       id: req.params.id,
     }
@@ -51,7 +51,7 @@ router.delete('/:id', (req, res) => {
   // delete a category by its `id` value
   Category.destroy({
     where: {
-      id: req.params.id
+      id: req.params.id,
     }
   })
   .then(response => res.json(response))
